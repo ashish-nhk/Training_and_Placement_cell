@@ -30,7 +30,9 @@ app.use(express.static(path.join(__dirname, 'partials')));
 app.use('/', (req, res) => {
     res.render('index');
 })
-
+app.use('/', (req, res) => {
+    res.render('about');
+})
 
 const port = 3000;
 app.listen(port, () => {
