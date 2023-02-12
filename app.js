@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'partials')));
 
 
 app.use('/', (req, res) => {
-    res.send('Welcome!!!!!');
+    res.render('index');
 })
 
 
